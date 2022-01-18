@@ -10,7 +10,7 @@ The code in this repository is designed to work with data released in conjunctio
 * [WE1S datasets on Zenodo](https://zenodo.org/search?page=3&size=20&q=WhatEvery1Says#)
 * [WE1S Workspace template archive on Zenodo](https://zenodo.org/record/5034712#.YVoLt6ApDOQ)
 
-This repo includes a `data` folder and 5 folders that each correspond to a different method of analysis or exploration we employ in our article. We call these folders "modules." Modules and data are each described below.
+This repo includes 5 folders that each correspond to a different method of analysis or exploration we employ in our article. We call these folders "modules." Modules are each described below. Data associated with this article is too big for GitHub; to download, see [this article's Dataverse repository](https://doi.org/10.7910/DVN/BD9CE8).
 
 The code in this repo expects the repo to be organized as we have organized it here. If you rename included folders or files or move them around, the included code may not function as expected without redefining file paths.
 
@@ -39,7 +39,7 @@ Each module includes the following:
 
 ## Data
 
-The data directory is too large for this repository. To download, go to [this article's repository in Dataverse](https://doi.org/10.7910/DVN/BD9CE8) and download `data.tgz`.
+The data directory is too large for this repository. To download, go to [this article's Dataverse repository](https://doi.org/10.7910/DVN/BD9CE8) and download `data.tgz`.
 
 ### About our data
 

@@ -31,7 +31,7 @@ For details on the Wilcoxon rank sum test, see [this description](https://data.l
 
 #### Input Folder
 
-The `input` folder is too big for this repository. To download, go to [this article's repository in Dataverse](https://doi.org/10.7910/DVN/BD9CE8) and download the `comparison` module.
+The `input` folder is too big for this repository. To download, go to [this article's Dataverse repository](https://doi.org/10.7910/DVN/BD9CE8) and download the `comparison` module.
 
 The input folder contains all of the derivative files you need to reproduce the Wilcoxon rank sum tests we describe in the article. The 3 subdirectories in this folder are organized by type of comparison. These subdirectories include:
 
