@@ -1,9 +1,9 @@
 # The Humanities in Public Code and Data Repository
 
-__authors__   = 'Lindsay Thomas, Abigail Droge'  
-__copyright__ = 'copyright 2021, The WE1S Project'  
-__license__   = 'GPL'  
-__version__   = '2.1'  
+__authors__   = 'Lindsay Thomas, Abigail Droge'
+__copyright__ = 'copyright 2021, The WE1S Project'
+__license__   = 'GPL'
+__version__   = '2.1'
 __email__     = 'lindsaythomas@miami.edu'
 
 The code in this repository is designed to work with data released in conjunction with the publication "The Humanities in Public: A Computational Analysis of US National and Campus Newspapers" by Lindsay Thomas and Abigail Droge, published in *The Journal of Cultural Analytics*. It is meant to aid in the reproduction of our analysis and is designed with that goal in mind. Our data and code is based on data and code collected and developed for the WhatEvery1Says project (WE1S). See the following for more information about the WE1S data and for generalizable versions of our project code designed to work with a variety of data types:
@@ -36,8 +36,10 @@ Each module includes the following:
     * One or mutiple `scripts` folders that include classes and functions called in the notebook.
     * Folders containing derivative data used in that module.
     * Folders where the results of the analyses performed in that module will be stored.
-    
+
 ## Data
+
+The data directory is too large for this repository. To download, go to [this article's repository in Dataverse](https://doi.org/10.7910/DVN/BD9CE8) and download `data.tgz`.
 
 ### About our data
 
@@ -45,13 +47,13 @@ The data we discuss in this article was downloaded from the LexisNexis API by pu
 
 * humanities keywords: We gathered this data by searching for documents containing "humanities" or "liberal arts".
 * science keywords: We gathered this data by searching for documents containing "science" and "sciences".
-* comparison keywords: WE1S gathered this data using keyword searches of 3 of the most common words in the English language (based on a well-known analysis of the Oxford English Corpus) that LexisNexis indexes and thus makes available for search: “person,” “say,” and “good”. We excluded the word "humanities" from our search in collecting these documents. For more information about our comparison corpus data, see "comparison-not-humanities" on this page: <https://we1s.ucsb.edu/research/we1s-materials/datasets/>. 
+* comparison keywords: WE1S gathered this data using keyword searches of 3 of the most common words in the English language (based on a well-known analysis of the Oxford English Corpus) that LexisNexis indexes and thus makes available for search: “person,” “say,” and “good”. We excluded the word "humanities" from our search in collecting these documents. For more information about our comparison corpus data, see "comparison-not-humanities" on this page: <https://we1s.ucsb.edu/research/we1s-materials/datasets/>.
 
-Except for documents collected using our comparison keywords, we did not use exclusive keyword searches to collect our data. This means that a document collected in a search for documents containing "science" or "sciences" might also contain the word "humanities," and vice versa. 
+Except for documents collected using our comparison keywords, we did not use exclusive keyword searches to collect our data. This means that a document collected in a search for documents containing "science" or "sciences" might also contain the word "humanities," and vice versa.
 
 We also collected many duplicate documents from LexisNexis. To sort out these duplicates, WE1S applies a de-duplication algorithm to its data. The de-duplication process found 4,602 duplicate documents, giving us 142,602 total "unique" documents. We count as "duplicates" any document that is 63% similar to another document. We found through experimentation that this fairly aggressive approach to de-duplication allows us to capture not only exact duplicates, but also updated articles, which include maybe just a new line or two, and articles published by a different outlet with only a few new or different lines (but often different metadata). We consider all of these different cases to be "duplicates."
 
-The rest of this section describes the contents of the `data` directory. 
+The rest of this section describes the contents of the `data` directory.
 
 ### json.zip
 
@@ -89,7 +91,7 @@ Json documents do not contain full-text data (content). They contain transformed
 
 ### doc-terms
 
-This folder contains what we call doc-terms files corresponding to the different collections of our data we analyze in the article. A doc-terms file is a line-delimited string of rows, with each row representing one document. Each row is a space-separated list of alphabetized terms with each term repeated once for the number of times it occurs in the document. 
+This folder contains what we call doc-terms files corresponding to the different collections of our data we analyze in the article. A doc-terms file is a line-delimited string of rows, with each row representing one document. Each row is a space-separated list of alphabetized terms with each term repeated once for the number of times it occurs in the document.
 
 Each doc-terms file corresponds to a WE1S collection. We have preserved the WE1S collection numbers; materials published on the WE1S website also use these collection numbers. More information on WE1S collections is available on the ["Key Collections" page](https://we1s.ucsb.edu/research/we1s-materials/collections-topic-models/) on our site.
 
@@ -113,9 +115,8 @@ This folder contains lists of filenames included in the above collections. It al
 
 ### metadata-c33 and metadata-c36
 
-These folders contain the metadata files needed to produce dfr-browsers for collections 33 and 36. We discuss models of these collections in the article. Each folder contains files our implementation of dfr-browser needs: `meta.csv`, `meta.temp.csv`, and `metadata-dfrb.csv`. These files are all different versions of the same metadata file (sorry about that!). 
+These folders contain the metadata files needed to produce dfr-browsers for collections 33 and 36. We discuss models of these collections in the article. Each folder contains files our implementation of dfr-browser needs: `meta.csv`, `meta.temp.csv`, and `metadata-dfrb.csv`. These files are all different versions of the same metadata file (sorry about that!).
 
 ### tables
 
 This folder contains information about the files we used in creating the tables that appear in the article. It also includes information about any files referenced in the article's notes. This folder includes its own `README.md`, which contains information about each file.
-
