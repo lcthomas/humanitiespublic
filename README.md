@@ -4,7 +4,7 @@ __authors__   = 'Lindsay Thomas, Abigail Droge'
 __copyright__ = 'copyright 2021, The WE1S Project'
 __license__   = 'GPL'
 __version__   = '2.1'
-__email__     = 'lindsaythomas@miami.edu'
+__email__     = 'lthomas@cornell.edu'
 
 The code in this repository is designed to work with data released in conjunction with the publication "The Humanities in Public: A Computational Analysis of US National and Campus Newspapers" by Lindsay Thomas and Abigail Droge, published in *The Journal of Cultural Analytics*. It is meant to aid in the reproduction of our analysis and is designed with that goal in mind. Our data and code is based on data and code collected and developed for the WhatEvery1Says project (WE1S). See the following for more information about the WE1S data and for generalizable versions of our project code designed to work with a variety of data types:
 * [WE1S datasets on Zenodo](https://zenodo.org/search?page=3&size=20&q=WhatEvery1Says#)
